@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 70pc;
+    padding-bottom: 10pc;
+}
+/* ____________________________header_______________________________________________ */
+header {
+    height: 110px;
+    display: flex;
+    border-bottom: rgba(146, 146, 146, 0.7) 1px solid;
+}
+.logo {
+    width: 173px;
+    height: 30px;
+    align-self: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.ul {
+    display: flex;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: hsl(218, 10%, 37%);
+    cursor: pointer;
+}
+li {
+    cursor: pointer;
+}
+li:hover {
+    color: hsl(26, 100%, 55%);
+    transition: 0.4s;
+}
+.cart-profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    left: 22pc;
+}
+#profile {
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#profile:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+}
+.list {
+    position: relative;
+    right: 20px;
+    height: 28px;
+    cursor: pointer;
+}
+.items {
+    display: none;
+    width: 21pc;
+    height: 14pc;
+    background-color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    left: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: scroll;
+}
+.show {
+    display: block;
+}
+.remove {
+    display: none;
+}
+.titled {
+    width: 100%;
+    height: 4pc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    display: flex;
+}
+.carted {
+    position: relative;
+    left: 25px;
+    font-size: 25px;
+}
+/* _____________________________________product____________________________________________________ */
+.product {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ____________________________________pictures____________________________________________________ */
+.pictures {
+    border-radius: 15px;
+    cursor: pointer;
+}
+.pictures:hover {
+    opacity: 50%;
+    transition: 0.4s;
+}
+.bigpics-cont {
+    width: 23.5pc;
+    height: 23.5pc;
+    background-image: url("images/image-product-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bigpics-cont:hover {
+    opacity: 80%;
+}
+.opacity {
+    opacity: 50%;
+    border: solid 2px hsl(26, 100%, 55%);
+}
+.extra-pictures {
+    margin-top: 25px;
+    width: 23.5pc;
+    display: flex;
+    justify-content: space-between;
+}
+.small-pictures {
+    width: 5pc;
+}
+/* ____________________________________Product info__________________________________________________ */
+.product-info {
+    position: relative;
+    top: 3.7pc;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(26, 100%, 55%);
+}
+.description {
+    font-size: 15px;
+    font: 100;
+    color: hsl(220, 14%, 75%);
+}
+.price {
+    margin-top: -20px;
+}
+.prix {
+    display: flex;
+}
+h4 {
+    font-size: 22px;
+}
+.promo {
+    height: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: hsl(25, 86%, 92%);
+    color: hsl(26, 100%, 55%);
+    position: relative;
+    top: 13px;
+    left: 15px;
+}
+h5 {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+    position: relative;
+    margin-top: -25px;
+}
+.demand {
+    display: flex;
+    justify-content: space-between;
+}
+.quantity {
+    background-color: hsl(220, 10%, 94%);
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.plus-minus {
+    cursor: pointer;
+    border: none;
+    font-size: 29px;
+    font-weight: 900;
+    padding: 0 10px;
+}
+.plus-minus:hover {
+    color: hsl(26, 96%, 71%);
+    transition: 0.4s;
+}
+.plus {
+    font-size: 30px;
+    position: relative;
+    bottom: 3px;
+}
+.minus {
+    font-size: xx-large;
+    position: relative;
+    bottom: 3px;
+}
+.add-cart {
+    width: 14pc;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    cursor: pointer;
+}
+.add-cart:hover {
+    background-color: hsl(26, 96%, 71%);
+    transition: 0.4s;
+}
+.cart {
+    height: 16px;
+    margin-right: 7px;
+    color: white;
+}
+h6 {
+    font-size: 15px;
+    margin-left: 7px;
+}
+/* _____________________________________________Full_________________________________________________ */
+.lightbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 23.7pc;
+    height: 23.7pc;
+    background-image: url("images/image-product-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+.darken {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+}
+.disp {
+    display: none;
+}
+.extra-pictures2, .extra {
+    margin-top: 25px;
+    width: 23.7pc;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top:96%;
+    left: 0%;
+}
+.small-pictures2, .small {
+    width: 4.5pc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.small:hover {
+    opacity: 60%;
+}
+.arrow2 {
+    position: relative;
+    left: 86%;
+}
+.arrow2, .arrow1 {
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    top: 45%;
+    right: 5%;
+    cursor: pointer;
+}
+span:hover {
+    color: hsl(26, 96%, 71%);
+}
+.close {
+    background-color: rgba(80, 80, 80, 0.3);
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    bottom: 10%;
+    left: 75%;
+    cursor: pointer;
+}
+.close:hover {
+    color: rgb(131, 1, 1);
+}
+.produit {
+    display: flex;
+    color: hsl(219, 17%, 65%);
+    font-size: 16px;
+    gap: 10px;
+}
+.quantityPrice {
+    margin-top: -10px;
+}
+.imagee {
+    height: 3.5pc;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.head {
+    font-size: 14px;
+}
+
+.total {
+    font-size: 16px;
+    color: rgb(78, 78, 78);
+    margin: 0;
+    position: relative;
+    bottom: 35px;
+    left: 90px;
+}
+.check {
+    font-size: 15px;
+    width: 15pc;
+    height: 2.9pc;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    position: relative;
+    bottom: 2.3pc;
+    right: 2.4pc;
+    cursor: pointer;
+    margin: 0;
+}
+.check:hover {
+    background-color: hsl(26, 95%, 63%);
+}
+.deleted {
+    position: relative;
+    bottom: 4.5pc;
+    left: 13pc;
+    cursor: pointer;
+    margin: 0;
+}
+.deleted:hover {
+    color: rgb(131, 1, 1);
+}
+.hidden {
+    display: none;
+}

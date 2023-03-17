@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,900&family=Kumbh+Sans:wght@800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/logo.svg" alt="" class="logo">
+      <div class="ul">
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Woman</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="cart-profile">
+        <img src="images/icon-cart.svg" alt="" class="list">
+        <img src="images/image-avatar.png" alt="" id="profile">
+      </div>
+      <div class="items">
+        <div class="titled">
+          <h1 class="carted">Cart</h1>
+        </div>
+        <div class="produit hidden">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" class="imagee">
+          <div class="informations">
+            <p class="head">Fall Limited Edition Sneakers</p>
+            <p class="quantityPrice">125.00 x </p>
+            <h6 class="total"></h6>
+            <span class="material-symbols-outlined deleted">
+              delete
+            </span>
+            <button class="check">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="full-img"></div>
+    <div class="product">
+      <div class="product-pictures">
+        <div class="bigpics-cont">
+        </div>
+        <div class="extra-pictures">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" class="small-pictures pic5 pictures">
+          <img src="images/image-product-2-thumbnail.jpg" alt="" class="small-pictures pic6 pictures">
+          <img src="images/image-product-3-thumbnail.jpg" alt="" class="small-pictures pic7 pictures">
+          <img src="images/image-product-4-thumbnail.jpg" alt="" class="small-pictures pic8 pictures">
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="company">Sneaker Company</h3>
+        <h1 id="title">Fall Limited Edition <br> Sneakers</h1>
+        <p class="description">These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+          durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+          <div class="price">
+            <div class="prix">
+              <h4>$125.00</h4>
+              <p class="promo">50%</p>
+            </div>
+            <h5>$250.00</h5>
+          </div>
+          <div class="demand">
+            <div class="quantity">
+                <h6 class="plus-minus minus">-</h6>
+                <p class="num">0</p>
+                <h6 class="plus-minus plus">+</h6>
+            </div>
+            <div class="add-cart">
+              <img src="images/icon-cart.png" alt="" class="cart"><h6>Add to cart</h6>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-pictures disp">
+    <img src="images/icon-previous.svg" alt="" class="arrows arrow1">
+    <img src="images/icon-next.svg" alt="" class="arrows arrow2">
+    <div class="bigpics-cont disp">
+    </div>
+    <div class="extra-pictures2 disp">
+      <img src="images/image-product-1-thumbnail.jpg" alt="" class="small-pictures2 pic5 pictures">
+      <img src="images/image-product-2-thumbnail.jpg" alt="" class="small-pictures2 pic6 pictures">
+      <img src="images/image-product-3-thumbnail.jpg" alt="" class="small-pictures2 pic7 pictures">
+      <img src="images/image-product-4-thumbnail.jpg" alt="" class="small-pictures2 pic8 pictures">
+    </div>
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
