@@ -13,7 +13,7 @@ minusPlus.forEach((minPlus)=>{
             if(count > 0){
                 count--
                 number.textContent = count
-            }else{
+            }else if(count === 0 || count < 0){
                 count = 1
                 number.textContent = 1
             }
