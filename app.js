@@ -2,7 +2,7 @@ const minusPlus = document.querySelectorAll('.plus-minus');
 const number = document.querySelector('.num');
 const items = document.querySelector('.items');
 
-let count = 0;
+let count = 1;
 
 minusPlus.forEach((minPlus)=>{
     minPlus.addEventListener('click', (e)=>{
@@ -14,8 +14,8 @@ minusPlus.forEach((minPlus)=>{
                 count--
                 number.textContent = count
             }else{
-                count = 0
-                number.textContent = 0
+                count = 1
+                number.textContent = 1
             }
         }
     })
